@@ -261,9 +261,9 @@ def caught_speeding(speed, is_birthday):
         speed = speed_org        
     if speed <= 60:
         print("No Ticket")
-    elif speed>60 and speed<81:
+    elif 60<speed<81:
         print ("Small Ticket")
-    elif speed>=81:
+    else:
         print ("Big Ticket")
     print(speed)
 pass
